@@ -183,6 +183,91 @@ section{
 
 
 /* SKILLS & EXPERIENCE PAGE */
+
+/*Work Experience part*/
+.container {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+ }
+ 
+ .timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl;
+ }
+ 
+  .timeline-block-left p {
+    text-align: left;
+  }
+ 
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #0ABAB5;
+    margin-top: 10px;
+    z-index: 9999
+ }
+ 
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+ }
+ 
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ 
+ .timeline-content span {
+    font-size: 15px;
+    /*color: #a4a4a4; commenting this out for now*/
+ }
+ 
+ .timeline-content p, .timeline-content li  {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
+ }
+
 .skills{
     background-color: var(--accent-color-1);
     display: flex;
@@ -381,6 +466,26 @@ footer {
     .image-container img{
         width: 250px;
         height: 250px;
+    }
+
+
+    /* SKILLS & EXPERIENCE PAGE */
+    /*Work Experience part*/
+    .container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+  
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
     }
 
 
